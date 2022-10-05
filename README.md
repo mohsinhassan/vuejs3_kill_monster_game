@@ -1,2 +1,19 @@
-# vuejs3_kill_monster_game
-This is the game created for kids also good to learn vuejs 3 as beginner coder
+# reaction-timer
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

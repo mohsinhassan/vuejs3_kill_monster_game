@@ -1,0 +1,35 @@
+<template>
+  <p>Reaction time - {{ score }} ms</p>
+  <p class="rank">{{ rank }}</p>
+</template>
+
+<script>
+export default {
+  props: ['score'],
+  data() {
+    return {
+      rank : null,
+      totalScore : 0
+    }
+  },
+  mounted() {
+    this.totalScore = this.score / 10;
+    console.log(this.totalScore);
+    if (this.totalScore < 250) {
+      this.rank = 'Ninja Fingers'
+    } else if (this.totalScore < 400) {
+      this.rank = 'Rapid Reflexes'
+    } else {
+      this.rank = '...Snail Pace'
+    }
+  }
+}
+</script>
+
+<style>
+  .rank {
+    font-size: 1.4em;
+    color: #0faf87;
+    font-weight: bold;
+  }
+</style>
